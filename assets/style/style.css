@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+#header {
+  background: #4c3575;
+  padding: 15px;
+  color: white;
+}
+.navbar {
+  background-color: #7858a6;
+  border-bottom: 4px solid #ff9919;
+}
+
+/*card*/
+#pmb {
+  background-color: #5b4b8a;
+  width: 70%;
+  margin: 80px auto;
+  border-radius: 56px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  #pmb {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+.site-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .site-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .site-container {
+    width: 80%;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.info-pmb-inner {
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+figure {
+  display: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .info-pmb-inner {
+    padding: 5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.pmb1,
+.pmb2 {
+  background-color: #ff772a;
+  width: 100%;
+  font-size: 0.8em;
+  border-radius: 20px;
+  border: 1px solid #371b58;
+  margin: 10px;
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s;
+}
+.tmbl {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+}
+.pmb1:hover,
+.pmb2:hover {
+  color: #ff772a;
+  background-color: #5b4b8a;
+  border: 2px solid #ff772a;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .pmb1,
+  .pmb2 {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 640px) {
+  .pmb1,
+  .pmb2 {
+    max-width: 80%;
+  }
+}
+
+/*pembatas*/
+.pmbts {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.grskr {
+  width: 28%;
+  height: 0px;
+  left: 0px;
+  top: 1782px;
+  background-color: #ff772a;
+  border: 5px solid #ff772a;
+  align-items: flex-start;
+  margin: auto;
+  margin-left: 0%;
+}
+.tengah {
+  box-sizing: border-box;
+  width: 40%;
+  background: #5b4b8a;
+  border: 3px solid #ff9919;
+  border-radius: 20px;
+  text-align: center;
+}
+.isi {
+  margin: 10px auto;
+  color: white;
+}
+.grsknn {
+  width: 28%;
+  height: 0px;
+  left: 0px;
+  top: 1782px;
+  background-color: #ff772a;
+  border: 5px solid #ff772a;
+  align-items: flex-end;
+  margin: auto;
+  margin-right: 0%;
+}
+
+/*carousel*/
+#carousel1 .carousel-item {
+  width: 100%;
+  color: white;
+  border: 4px solid #ffcc00;
+  background-image: linear-gradient(113.3deg, #4c3575 38.45%, #ff9919 95.97%);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold;
+  padding: 50px 20px 50px 120px;
+  margin: 70px auto;
+}
+#carousel2 .carousel-item {
+  bottom: 0;
+  color: white;
+  border: 4px solid #5b4b8a;
+  background-color: #ff9919;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold;
+  padding: 50px 20px 50px 120px;
+  margin-bottom: 70px;
+}
+#carousel2 .carousel-item .container .gmbrcar,
+#carousel2 .carousel-item .container .desccar,
+#carousel1 .carousel-item .container .desccar,
+#carousel1 .carousel-item .container .gmbrcar {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px auto;
+  width: 40%;
+}
+@media screen and (max-height: 800px) {
+  #carousel2 .carousel-item,
+  #carousel1 .carousel-item {
+    position: static;
+  }
+  #carousel1 .carousel-item {
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+  #carousel2 .carousel-item {
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+  #header .row .col-6 .text-end {
+    display: none;
+  }
+  #header .row .col-6 {
+    width: 100%;
+  }
+}
+#carousel2 .carousel-item .container .desccar,
+#carousel1 .carousel-item .container .desccar {
+  margin-left: 30px;
+  margin-top: 80px;
+  align-items: center;
+}
+@media screen and (max-width: 880px) {
+  #carousel2 .carousel-item .container .desccar,
+  #carousel2 .carousel-item .container .gmbrcar,
+  #carousel1 .carousel-item .container .desccar,
+  #carousel1 .carousel-item .container .gmbrcar {
+    display: block;
+    width: 80%;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+.desccar .btn {
+  width: 50%;
+  color: #4c3575;
+  border: 3px solid #4c3575;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 0 #4c3575;
+  transition: ease-out 0.3s;
+}
+.desccar .btn:hover {
+  box-shadow: inset 300px 0 0 0 #4c3575;
+  cursor: pointer;
+  color: #ff9919;
+}
+@media screen and (max-width: 990px) {
+  .desccar .btn {
+    width: 90%;
+  }
+  .pmbts .tengah {
+    width: 90%;
+    margin: auto;
+  }
+  .pmbts .grskr {
+    display: none;
+  }
+  .pmbts .grsknn {
+    display: none;
+  }
+}
+
+/*video*/
+.kotak {
+  width: 70%;
+  align-items: center;
+  margin: 10px auto;
+  padding: 5px;
+  border: 4px solid #4c3575;
+}
+
+/*footer*/
+.alamat {
+  margin-bottom: 70px;
+}
+.footimg {
+  width: 50%;
+  margin-bottom: 30px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  border-top: 4px solid #ff9919;
+}
+.footer {
+  background-color: #5b4b8a;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold;
+  padding: 80px 20px 30px 120px;
+  margin-top: 80px;
+}
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+footer {
+  position: static;
+}
+.footer .footer-left {
+  width: 40%;
+}
+.sosmed {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 200px;
+  justify-content: space-between;
+}
+.sosmed a {
+  color: white;
+}
+.ig:hover {
+  color: #a91079;
+}
+.twt:hover {
+  color: #3ab0ff;
+}
+.yt:hover {
+  color: red;
+}
+.footer .footer-center {
+  width: 20%;
+}
+.alamat p a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.alamat p a:hover {
+  box-shadow: inset 190px 0 0 0 white;
+  color: #5b4b8a;
+}
+.akademik {
+  margin-bottom: 80px;
+}
+.akademik p a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.akademik p a:hover {
+  box-shadow: inset 150px 0 0 0 white;
+  color: #5b4b8a;
+}
+.akademik h3 {
+  margin-bottom: 50px;
+}
+.alumni h3 {
+  margin-bottom: 50px;
+}
+.alumni p a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.alumni p a:hover {
+  box-shadow: inset 50px 0 0 0 white;
+  color: #5b4b8a;
+}
+@media screen and (max-width: 880px) {
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: left;
+  }
+  .footer {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
+.footer-right h3 {
+  margin-bottom: 40px;
+}
+.footer-right p a {
+  color: white;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.footer-right p a:hover {
+  box-shadow: inset 320px 0 0 0 white;
+  color: #5b4b8a;
+}
+#copyright {
+  background: #ff9919;
+  padding: 15px 20px 10px 20px;
+  color: white;
+}
+/* card profil */
+.cards img {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+.card1 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.card2 {
+  width: 25%;
+  padding: 0 16px;
+}
+.cards {
+  background-color: #4c3575;
+  color: white;
+  border: 3px solid #ff9919;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 8px 16px black;
+}
+.cards h4 {
+  margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .card2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .card1 {
+    display: block;
+  }
+}

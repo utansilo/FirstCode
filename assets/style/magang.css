@@ -1,0 +1,44 @@
+.contmagang {
+  margin: 2.5em auto;
+  width: 50%;
+  box-sizing: border-box;
+}
+.contmagang .dwnldflmgng {
+  width: 100%;
+  color: black;
+  justify-content: space-between;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  display: flex;
+  padding: 2rem;
+}
+.contmagang .mgngkri,
+.contmagang .mgngknn {
+  display: inline-block;
+  vertical-align: top;
+}
+.contmagang .mgngkri {
+  width: 70%;
+  border-right: 4px solid black;
+  padding-right: 20px;
+}
+.contmagang .mgngknn {
+  width: 30%;
+}
+.mgng {
+  color: red;
+}
+.mgng:hover {
+  color: blue;
+}
+.cntr1 {
+  margin-top: 100px;
+}
+.cntr2 {
+  margin-top: 150px;
+}
+.linkta {
+  margin-top: 100px;
+}
